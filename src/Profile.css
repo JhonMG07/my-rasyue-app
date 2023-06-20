@@ -1,0 +1,36 @@
+.profile-container {
+  display: flex;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  
+  padding: 10px;
+  z-index: 999;
+  /* Agrega cualquier otro estilo necesario para el navbar */
+}
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 50px; /* Altura del navbar */
+  height: calc(100% - 50px); /* Altura total menos la altura del navbar */
+  width: 250px;
+  /* Agrega cualquier otro estilo necesario para el sidebar */
+}
+
+.content {
+  flex: 1;
+  margin-left: 250px; /* Ancho del sidebar */
+  padding: 20px;
+  /* Agrega cualquier otro estilo necesario para el contenido */
+}
+
+.content-inner {
+  min-height: 800px;
+  margin-top: 90px;
+  color: white;
+  /* Agrega cualquier otro estilo necesario para el contenido interno */
+}
